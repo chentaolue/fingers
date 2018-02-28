@@ -134,7 +134,7 @@ Hereafter, a pooling layer is employed to reduce the feature map size. In genera
 q_{a^{l},b^{l},c}=\underset{0\leq a<p_h,0\leq b<p_w}{\max} o_{a^{l}\times p_h+a, b^{l}\times p_w+b,c}
 \label{eq:pooling_layer}
 \end{equation}
-where $q_{a^{l},b^{l},c}$ represents the outcome of a pooling layer node, $0\leq a^{l} <p_h^{l}$, $p_h^{l}$ represents the hight of the pooled feature map, $0\leq b^{l} <p_w^{l}$, $p_w^{l}$ represents the width of the pooled feature map, $0\leq c <C^{l}=C^{l-1}$, $p_h$ and $p_w$ respectively represent the hight and width of the feature map subregions that need to be pooled \cite{wu2017introduction}. 
+where $q_{a^{l},b^{l},c}$ represents the outcome of a pooling layer node, $0\leq a^{l} <p_h^{l}$, $p_h^{l}$ represents the height of the pooled feature map, $0\leq b^{l} <p_w^{l}$, $p_w^{l}$ represents the width of the pooled feature map, $0\leq c <C^{l}=C^{l-1}$, $p_h$ and $p_w$ respectively represent the hight and width of the feature map subregions that need to be pooled \cite{wu2017introduction}. 
 
 \subsection{Fully Connected Layer}
 Now, fully connected layer is applied to map between the pooling layer and the required number of recognizing subjects. Equation \ref{eq:fully_connect} simulates the operation of the fully connected layer. The produced feature maps in layer $l-1$ are interpreted as $m_1^{l-1} \times m_2^{l-1} \times m_3^{l-1}$ dimensional vectors as follows:
